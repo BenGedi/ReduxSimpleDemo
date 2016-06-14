@@ -4,6 +4,7 @@
   "requireTrailingComma": false,
   "requireShorthandArrowFunctions": false,
   "validateLineBreaks": "CRLF",
+  "requireLineFeedAtFileEnd": false,
   "validateQuoteMarks": { "mark": "'", "escape": true, "ignoreJSX": true },
   "excludeFiles": [
     "node_modules/**",
