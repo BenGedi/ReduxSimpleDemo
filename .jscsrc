@@ -3,6 +3,7 @@
   "fileExtensions": [".js", ".jsx"],
   "requireTrailingComma": false,
   "validateIndentation": 4,
+  "disallowTrailingWhitespace": true,
   "requireShorthandArrowFunctions": false,
   "validateLineBreaks": "CRLF",
   "requireLineFeedAtFileEnd": false,
