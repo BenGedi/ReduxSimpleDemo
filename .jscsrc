@@ -1,15 +1,13 @@
 {
-	"preset": "airbnb",
-	"fileExtensions": [".js", ".jsx"],
-	"requireTrailingComma": false,
-	"validateIndentation": "\t",
-	"disallowTrailingWhitespace": false,
-	"requireShorthandArrowFunctions": false,
-	"validateLineBreaks": "CRLF",
-	"requireLineFeedAtFileEnd": false,
-	"validateQuoteMarks": { "mark": "'", "escape": true, "ignoreJSX": true },
-	"excludeFiles": [
-		"node_modules/**",
-		"build/**"
-	]
+  "preset": "airbnb",
+  "fileExtensions": [".js", ".jsx"],
+  "requireTrailingComma": false,
+  "requireShorthandArrowFunctions": false,
+  "validateLineBreaks": "CRLF",
+  "requireLineFeedAtFileEnd": false,
+  "validateQuoteMarks": { "mark": "'", "escape": true, "ignoreJSX": true },
+  "excludeFiles": [
+    "node_modules/**",
+    "build/**"
+  ]
 }
