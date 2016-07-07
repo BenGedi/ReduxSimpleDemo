@@ -1,10 +1,11 @@
 import _ from 'lodash';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import YTSearch from 'youtube-api-search';
+import YTSearch from 'youtube-api-search'; //npm install --save youtube-api-search
 import SearchBar from './components/search_bar';
 import VideoList from './components/video_list';
 import VideoDetail from './components/video_detail';
+// To create api key go to: console.developers.google.com 
 const API_KEY = 'AIzaSyB6mVkcfpgSHsb-vWKi8_jESFbF-6oSpxQ';
 
 class App extends Component {
@@ -33,14 +34,20 @@ class App extends Component {
 
 		return (
 			<div>
-				<SearchBar onSearchTermChange={ videoSearch } />
-				<VideoDetail video={ this.state.selectedVideo } />
-				<VideoList
-						onVideoSelect={ selectedVideo => this.setState({ selectedVideo }) }
-						videos={ this.state.videos } />
+				<SearchBar />
 			</div>
 		);
 	}
 }
+
+/*
+<div>
+    <SearchBar onSearchTermChange={ videoSearch } />
+    <VideoDetail video={ this.state.selectedVideo } />
+    <VideoList
+            onVideoSelect={ selectedVideo => this.setState({ selectedVideo }) }
+            videos={ this.state.videos } />
+</div>
+*/
 
 ReactDOM.render(<App />, document.querySelector('.container'));
