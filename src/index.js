@@ -5,7 +5,8 @@ import YTSearch from 'youtube-api-search'; //npm install --save youtube-api-sear
 import SearchBar from './components/search_bar';
 import VideoList from './components/video_list';
 import VideoDetail from './components/video_detail';
-// To create api key go to: console.developers.google.com 
+
+// To create api key go to: console.developers.google.com
 const API_KEY = 'AIzaSyB6mVkcfpgSHsb-vWKi8_jESFbF-6oSpxQ';
 
 class App extends Component {
@@ -13,8 +14,8 @@ class App extends Component {
 		super(props);
 
 		this.state = {
-				videos: [],
-				selectedVideo: null
+			videos: [],
+			selectedVideo: null
 		};
 
 		this.videoSearch('surfboards');
@@ -35,6 +36,8 @@ class App extends Component {
 		return (
 			<div>
 				<SearchBar />
+                <VideoList
+                        videos={ this.state.videos } />
 			</div>
 		);
 	}
