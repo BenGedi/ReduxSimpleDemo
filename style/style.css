@@ -5,6 +5,7 @@
 
 .search-bar input {
   width: 75%;
+  padding: 0 10px;
 }
 
 .video-item img {
@@ -12,7 +13,7 @@
 }
 
 .video-detail .details {
-  margin-top: 10px;
+  margin: 10px 0;
   padding: 10px;
   border:1px solid #ddd;
   border-radius: 4px;
@@ -24,4 +25,24 @@
 
 .list-group-item:hover {
   background-color: #eee;
+}
+
+.embed-responsive-item{
+    border-radius: 4px;
+}
+
+::-webkit-input-placeholder {
+   font-style: italic;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   font-style: italic;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   font-style: italic;
+}
+
+:-ms-input-placeholder {
+   font-style: italic;
 }
